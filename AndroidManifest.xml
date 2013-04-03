@@ -11,7 +11,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-
+ 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission 
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+   
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
@@ -27,6 +32,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name="com.yardsale.map.MapActivity"
             android:label="@string/app_name" >
@@ -37,22 +43,20 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAySRzkfGyThpCtrcEjLQ5piryle6jUmuY" />
+    
+        <activity
+            android:name="com.yardsale.login.Register"
+            android:label="@string/title_activity_register" >
+        </activity>
 
-        <activity
-            android:name="com.yardsale.login.Register"
-            android:label="@string/title_activity_register" >
-        </activity>
-        <activity
-            android:name="com.yardsale.login.Register"
-            android:label="@string/title_activity_register" >
-        </activity>
         <activity
             android:name="com.yardsale.login.Login"
             android:label="@string/title_activity_login" >
         </activity>
+       <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCiy_-RdC1zdr8DurT2BsYksDctXJPAvRU" />
+        
     </application>
 
 </manifest>
